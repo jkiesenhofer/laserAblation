@@ -26,7 +26,7 @@ regions
         box (-0.9 -0.9 0) (0.04 0.04 0.01);
         fieldValues
         (
-            volScalarFieldValue alpha.zn 1
+            volScalarFieldValue alpha.fe 1
         );
     }
 );
