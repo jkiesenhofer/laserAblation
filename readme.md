@@ -1,2 +1,2 @@
-# Flow simulation optoFoam: laser soldering and welding
+# Flow simulation optoFoam
 `Optothermic ray tracing by OpenFOAM®`
