@@ -30,7 +30,7 @@ rayf=a*beam;
 # I ~exp(2r^2/Wz^2)
 
 #beam=100*beam;
-# Solid iron (zeros) is surrounded by argon (float numbers) and molten 
+# Solid steel (zeros) is surrounded by argon (float numbers) and molten 
 # by a laser beam creating a potential flow (centric one number)
 i=0
 j=0
