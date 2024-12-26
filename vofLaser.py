@@ -6,7 +6,7 @@ import plotly.figure_factory as ff
 import plotly
 import array as arr
 c=24
-wavelength=337.1; # in nm of nitrogen laser
+wavelength=337.1; # nm of nitrogen laser
 a = 0.0*np.ones((c,c))
 beam = np.ones((c,c))
 a[0][0]=0.5
