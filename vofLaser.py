@@ -91,8 +91,11 @@ dict = {
 transfertAvec = dict.items()
 valeurs = list(transfertAvec)
 numpyArray = np.array(valeurs)
-convexite = 1-(numpyArray[:,1]-264);
-plt.plot(convexite)
+convexite = numpyArray[:,1]-264;
+vof=convexite;
+for z in range(len(convexite)):
+  vof[z]=vof[z]+vof[z-1]
+plt.plot(vof)
 plt.show()
 
 c=24
