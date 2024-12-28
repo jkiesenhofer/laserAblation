@@ -95,9 +95,7 @@ vof=convexite;
 for z in range(len(convexite)):
   vof[z]=abs(vof[z]-vof[z-1])/2
 c=80
-#a = np.ones((c,c))
 beam = np.ones((c,c))
-#a[0][0]=0.5
 b = np.arange(c,0,-1)
 i=0
 j=0
@@ -109,7 +107,6 @@ for z in range(int(c/2),-int(c/2),-1):
     beam[j][i]=numpy.exp(-r**2/c**2)
     beam[j][i]=beam[j][i]/beam.max()
     #beam[j][i]=1/r**2
-#rayf=a*beam;
 plt.plot(vof)
 plt.grid()
 plt.show()
