@@ -110,39 +110,3 @@ for z in range(int(c/2),-int(c/2),-1):
 plt.plot(vof)
 plt.grid()
 plt.show()
-
-# z0=1;
-# z=0;
-# W0=numpy.sqrt(wavelength*z0/numpy.pi);
-# Wz=W0*numpy.sqrt(1+(z/z0)**2);
-# I ~exp(2r^2/Wz^2)
-
-#beam=100*beam;
-# L'acier solide (zéros) est entouré d'argon (chiffres flottants) 
-# et fondu par un faisceau laser créant un flux potentiel (chiffre centré)
-i=0
-j=0
-# itération et impression de chaque élément
-for z in range(int(c/2),int(c)-1,1):
-  #for y in range(int(c)-7,int(c/2)-7,-1):
-  for y in range(int(c/2)-1,0,-1):
-    i=int(y)
-    j=int(z)
-    beam[j][i]=1
-f=np.gradient(beam)
-
-for z in range(int(c/2),-int(c/2),-1):
-  for y in range(-int(c/2),int(c/2),1):
-    i=int(y)
-    j=int(z)
-    beam[j][i]=abs(beam[j][i]-1)
-for z in range(int(c/2),-int(c/2),-1):
-  for y in range(-int(c/2),int(c/2),1):
-    i=int(y)
-    j=int(z)
-    beam[j][i]=beam[j][i]/beam.max()
-
-fig = alpha.imshow(beam,text_auto=True)
-#fig.show()
-
-#plotly.offline.plot(fig1, filename='alpha.html')
