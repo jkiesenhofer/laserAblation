@@ -95,8 +95,8 @@ convexite = numpyArray[:,1]-264;
 vof=convexite;
 for z in range(len(convexite)):
   vof[z]=abs(vof[z]-vof[z-1])
-#plt.xlim(0,50)
-#plt.ylim(0.5,3.5)
+plt.xlim(0,50)
+plt.ylim(0.0,2.5)
 plt.title("refractive velocity")
 plt.plot(vof)
 plt.grid()
