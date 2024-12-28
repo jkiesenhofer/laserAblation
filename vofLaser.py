@@ -124,11 +124,11 @@ rayf=a*beam;
 # I ~exp(2r^2/Wz^2)
 
 #beam=100*beam;
-# Solid steel (zeros) is surrounded by argon (float numbers) and molten 
-# by a laser beam creating a potential flow (centric one number)
+# L'acier solide (zéros) est entouré d'argon (chiffres flottants) 
+# et fondu par un faisceau laser créant un flux potentiel (chiffre centré)
 i=0
 j=0
-# iterating and printing each item
+# itération et impression de chaque élément
 for z in range(int(c/2),int(c)-1,1):
   #for y in range(int(c)-7,int(c/2)-7,-1):
   for y in range(int(c/2)-1,0,-1):
