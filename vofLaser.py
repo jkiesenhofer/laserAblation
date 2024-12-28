@@ -95,6 +95,9 @@ convexite = numpyArray[:,1]-264;
 vof=convexite;
 for z in range(len(convexite)):
   vof[z]=vof[z]+vof[z-1]
+plt.xlim(0,66)
+plt.ylim(0,4.2)
+plt.title("refractive flow interface")
 plt.plot(vof)
 plt.show()
 
