@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import numpy
 import plotly.express as alpha
-import plotly.figure_factory as ff
 import plotly
 import array as arr
 # n-2 < 1 ? 1 : (((n+2) ** lambda(n-2)-3)**3)/264;
@@ -153,11 +152,3 @@ fig = alpha.imshow(beam,text_auto=True)
 #fig.show()
 
 #plotly.offline.plot(fig1, filename='alpha.html')
-
-x,y = np.meshgrid(np.arange(0,int(c),1), np.arange(0,int(c),1))
-# returns no list
-u = np.cos(x)*y
-v = np.sin(x)*y
-
-fig = ff.create_quiver(x, y, u, v)
-#fig.show()
