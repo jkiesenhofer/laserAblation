@@ -95,14 +95,14 @@ convexite = numpyArray[:,1]-264;
 vof=convexite;
 for z in range(len(convexite)):
   vof[z]=vof[z]+vof[z-1]
-plt.xlim(0,66)
-plt.ylim(0,4.2)
-plt.title("refractive flow interface")
+plt.xlim(0,50)
+plt.ylim(0.5,3.5)
+plt.title("refractive flow index")
 plt.plot(vof)
+plt.grid()
 plt.show()
 
 c=24
-wavelength=337.1; # nm of nitrogen laser
 a = 0.0*np.ones((c,c))
 beam = np.ones((c,c))
 a[0][0]=0.5
