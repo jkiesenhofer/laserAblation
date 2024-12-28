@@ -97,7 +97,7 @@ for z in range(len(convexite)):
   vof[z]=abs(vof[z]-vof[z-1])
 #plt.xlim(0,50)
 #plt.ylim(0.0,2.5)
-plt.title("refractive velocity")
+plt.title("refractive index")
 plt.plot(vof)
 plt.grid()
 plt.show()
