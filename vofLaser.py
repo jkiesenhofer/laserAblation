@@ -100,7 +100,7 @@ plt.plot(vof)
 plt.grid()
 plt.show()
 
-c=24
+c=80
 a = 0.0*np.ones((c,c))
 beam = np.ones((c,c))
 a[0][0]=0.5
