@@ -5,7 +5,7 @@ import plotly.express as alpha
 import plotly.figure_factory as ff
 import plotly
 import array as arr
-
+# n-2 < 1 ? 1 : (((n+2) ** lambda(n-2)-3)**3)/264;
 dict = {
 0 : 265,
 1 : 265,
