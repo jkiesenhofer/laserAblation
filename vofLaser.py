@@ -2,8 +2,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import numpy
-#import plotly.express as alpha
-#import plotly
 import array as arr
 dict = {
   
