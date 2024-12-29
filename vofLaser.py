@@ -1,4 +1,3 @@
-# n-2 < 1 ? 1 : (((n+2) ** lambda(n-2)-3)**3)/264;
 import matplotlib.pyplot as plt
 import numpy as np
 import numpy
