@@ -3,8 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import numpy
 import array as arr
-dict = {
-  
+dict = { 
 0 : 265,
 1 : 265,
 2 : 265,
@@ -84,8 +83,7 @@ dict = {
 76 : 263.96228515792205,
 77 : 263.96225840515456,
 78 : 263.96223195684973,
-79 : 263.9622058057955
-  
+79 : 263.9622058057955 
 }
 transfertAvec = dict.items()
 valeurs = list(transfertAvec)
