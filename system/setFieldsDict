@@ -23,7 +23,7 @@ regions
 (
     boxToCell
     {
-        box (-0.9e-06 -0.9e-06 0) (0.04e-06 0.04e-06 0.01);
+        box (-0.9e-06 -0.9e-06 0) (0.04e-06 0.04e-06 0.01e-06);
         fieldValues
         (
             volScalarFieldValue alpha.fe 1
