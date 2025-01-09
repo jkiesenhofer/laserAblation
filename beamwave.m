@@ -40,7 +40,7 @@ labels(vals == 0) = "0 nm";
 end
 
 subplot(1,2,1);
-contour(Xqr,Yqr,Z,10,'ShowText',"on", 'linecolor','black'), axis equal
+contour(Xqr,Yqr,Z,10,'ShowText',"on", 'linecolor','k'), axis equal
 
 subplot(1,2,2);
-contour(Xqr,Yqr,Zr,10,'ShowText',"on", 'linecolor','black'), axis equal
+contour(Xqr,Yqr,Zr,10,'ShowText',"on", 'linecolor','k'), axis equal
