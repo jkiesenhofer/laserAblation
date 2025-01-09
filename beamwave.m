@@ -18,12 +18,12 @@ Xqr = reshape(rotXY(:,1), size(Xq,1), []);
 Yqr = reshape(rotXY(:,2), size(Yq,1), []);
 
 
-Zr = exp(-(Xqr.^2+Yqr.^2-2*Xqr.*sqrt(Xqr.^2+Yqr.^2)*phi+phi^2)/width^2); % ‘Z’ Provides A Surface
+Zr = exp(-(Xqr.^2+Yqr.^2-2*Xqr.*sqrt(Xqr.^2+Yqr.^2)*phi+phi^2)/width^2); % ‘Z’ To Provide A Surface
 
 
 %Zr = Zr/max(max(Zr));
 
-contour(Xqr,Yqr,Zr,10,'ShowText',"on", 'linecolor','k') % Rotated contour(X,Y,Z,'ShowText','on')
+contour(Xqr,Yqr,Z,10,'ShowText',"on", 'linecolor','black') % Rotated contour(X,Y,Z,'ShowText','on')
 t = xlabel('z_R');
 t = ylabel('r');
 %,true,"LabelFormat","%0.1f m"
@@ -38,3 +38,9 @@ feet = round(vals.*feetPerMeter);
 labels = vals + " m (" + feet + " ft)";
 labels(vals == 0) = "0 nm";
 end
+
+subplot(1,2,1);
+contour(Xqr,Yqr,Z,10,'ShowText',"on", 'linecolor','black'), axis equal
+
+subplot(1,2,2);
+contour(Xqr,Yqr,Zr,10,'ShowText',"on", 'linecolor','black'), axis equal
