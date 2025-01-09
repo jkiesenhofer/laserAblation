@@ -23,7 +23,7 @@ Zr = exp(-(Xqr.^2+Yqr.^2-2*Xqr.*sqrt(Xqr.^2+Yqr.^2)*phi+phi^2)/width^2); % â€˜Zâ
 
 %Zr = Zr/max(max(Zr));
 
-contour(Xqr,Yqr,Z,10,'ShowText',"on", 'linecolor','black') % Rotated contour(X,Y,Z,'ShowText','on')
+contour(Xqr,Yqr,Z,10,'ShowText',"on", 'linecolor','k') % Rotated contour(X,Y,Z,'ShowText','on')
 t = xlabel('z_R');
 t = ylabel('r');
 %,true,"LabelFormat","%0.1f m"
