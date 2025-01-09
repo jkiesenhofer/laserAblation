@@ -18,7 +18,7 @@ Xqr = reshape(rotXY(:,1), size(Xq,1), []);
 Yqr = reshape(rotXY(:,2), size(Yq,1), []);
 
 
-Zr = exp(-(Xqr.^2+Yqr.^2-2*Xqr.*sqrt(Xqr.^2+Yqr.^2)*phi+phi^2)/width^2); % ‘Z’ To Provides A Surface
+Zr = exp(-(Xqr.^2+Yqr.^2-2*Xqr.*sqrt(Xqr.^2+Yqr.^2)*phi+phi^2)/width^2); % ‘Z’ Provides A Surface
 
 
 %Zr = Zr/max(max(Zr));
