@@ -1,5 +1,5 @@
 width=1;
-angle = -10.54/30*0.0; %TO ROTATE CLOCKWISE BY X DEGREES
+angle = 2; %-10.54/30*0.0; %TO ROTATE CLOCKWISE BY X DEGREES
 R = [cos(angle) -sin(angle);sin(angle) cos(angle)];  %CREATE THE MATRIX
 %R = [0.97 -0.03;0.03 0.97];
 x = linspace(-width*0.0,width);
@@ -23,7 +23,7 @@ Zr = exp(-(Xqr.^2+Yqr.^2-2*Xqr.*sqrt(Xqr.^2+Yqr.^2)*phi+phi^2)/width^2); % â€˜Zâ
 
 %Zr = Zr/max(max(Zr));
 
-contour(Xqr,Yqr,Z,10,'ShowText',"on", 'linecolor','k') % Rotated contour(X,Y,Z,'ShowText','on')
+contour(Xqr,Yqr,Z,10,'ShowText',"on", 'linecolor','black') % Rotated contour(X,Y,Z,'ShowText','on')
 t = xlabel('z_R');
 t = ylabel('r');
 %,true,"LabelFormat","%0.1f m"
@@ -39,8 +39,12 @@ labels = vals + " m (" + feet + " ft)";
 labels(vals == 0) = "0 nm";
 end
 
-subplot(1,2,1);
-contour(Xqr,Yqr,Z,10,'ShowText',"on", 'linecolor','k'), axis equal
+%subplot(1,2,2);
+%contour(Xqr,Yqr,Z,5,'ShowText',"on", 'linecolor','black'), axis equal
+%xlim([0 width])
+%ylim([-0.1 1.4])
 
-subplot(1,2,2);
-contour(Xqr,Yqr,Zr,10,'ShowText',"on", 'linecolor','k'), axis equal
+%subplot(1,2,1);
+contour(Xqr,Yqr,Zr,12,'ShowText',"on", 'linecolor','black'), axis equal
+xlim([0 width])
+ylim([-0.1 1.4])
